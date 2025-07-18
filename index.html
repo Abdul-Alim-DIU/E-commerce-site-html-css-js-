@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ShopEasy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="cart-icon">
+                    <a href="#cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome ShopEasy</h2>
+                <p>A complete solution for your necessities</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>All Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be added dynamically with JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Welcome to ShopEasy, your premier online shopping destination. We're committed to providing you with the best products, with a focus on quality, customer service, and uniqueness.</p>
+                <p>Founded in 2025, ShopEasy has come a long way from its beginnings. When we first started out, our passion for providing the best shopping experience drove us to do tons of research so that ShopEasy can offer you the world's most advanced products.</p>
+                <p>We now serve customers all over the world and are thrilled that we're able to turn our passion into our own website.</p>
+            </div>
+        </section>
+
+        <div class="modal" id="product-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-product-details" id="modal-product-details">
+                    <!-- Product details will be added dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-price">0.00</span></p>
+                <button class="btn checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
